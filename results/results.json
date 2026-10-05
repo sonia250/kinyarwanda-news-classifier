@@ -1,0 +1,7 @@
+{
+  "baseline_tfidf_logreg": {
+    "accuracy": 0.8633540372670807,
+    "macro_f1": 0.7762918796471926,
+    "weighted_f1": 0.85931803671519
+  }
+}
