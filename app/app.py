@@ -33,8 +33,10 @@ EXAMPLES = {
     "Politics headline": "Ukraine: Mbega Putin ashaka iki, ubwo Russia izoteba ihagarika intambara?",
     "Religion headline": "Uganda: Musenyeri mukuru wa Kampala Cyprian Kizito Lwanga yitavye Imana",
     "Business headline": "Perezida Nkurunziza avuga ko u Burundi bugiye gutangura kwimba Coltan kuva 2020",
+    "Entertainment (headline + summary)": "Video: Mu munota umwe... ubuzima bwa Queen Elizabeth II. Ubwami bw'Ubwongereza bwabuze Umwamikazi, Elizabeth II, yari amaze imyaka 70 ku ngoma. Ubu ni ubuzima bwiwe kuva yimikwa gushika ku munsi wiwe wanyuma... mu munota umwe.",
+    "Politics (headline + summary)": "Abanye Ethiopia bavuga igituma bashaka kuja muri Russia. Ababoneka batonze imirongo imbere y'ubuserukizi bwa Russia muri Ethiopia, bavuga ko bashaka kuja kurwana muri Ukraine, cane cane kuko ubuzima bugoye mu gihugu.",
 }
-
+st.caption("Tip: paste the headline AND the article. A headline alone is much less reliable.")
 choice = st.selectbox("Try an example (optional)", ["(write my own)"] + list(EXAMPLES))
 default = "" if choice == "(write my own)" else EXAMPLES[choice]
 text = st.text_area("Kirundi news text (headline, or headline + article)",
